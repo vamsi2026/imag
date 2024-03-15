@@ -43,7 +43,7 @@ public class Employee {
 
 	@Column(unique = true)
 	@ValidPhoneNumbers
-	List<String> phoneNumber;
+	List<String> phoneNumbers;
 
 	@NotBlank(message = "Date of Joining is required")
 	@Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}", message = "Date of Joining must be in the format yyyy-MM-dd")

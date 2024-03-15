@@ -8,6 +8,11 @@ import java.lang.annotation.Target;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
+/**
+ * Specifies that the annotated element must be a field and is validated by
+ * ListPhoneNumberValidator. It provides a default error message and allows
+ * specification of validation groups and payload.
+ */
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = ListPhoneNumberValidator.class)
